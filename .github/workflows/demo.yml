@@ -12,5 +12,5 @@ jobs:
       - name: Run script
         run: |
           pwd
-          chmod +x ./script.sh
-          bash ./script.sh
+          chmod +x ./.github/scripts/script.sh
+          bash ./.github/scripts/script.sh
