@@ -1,0 +1,16 @@
+name: "Script GitHub Action"
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run script
+        run: |
+          pwd
+          chmod +x ./script.sh
+          bash ./script.sh
