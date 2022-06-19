@@ -1,7 +1,9 @@
-name: "Another GitHub Action"
+name: 'Another GitHub Action'
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - 'feature/test'
 
 jobs:
   start:
