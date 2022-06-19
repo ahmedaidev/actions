@@ -1,0 +1,16 @@
+name: "Another GitHub Action"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Run script
+        run: |
+          pwd
+          chmod +x ./.github/scripts/script.sh
+          bash ./.github/scripts/script.sh
